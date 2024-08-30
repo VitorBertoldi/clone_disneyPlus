@@ -10,6 +10,10 @@
         grid-template-columns: 1fr 1fr 1fr;
         gap: 24px;
 
+        @media (max-width: 768px) {
+            grid-template-columns: 1fr 1fr;
+        }
+
         &--is-active {
             display: grid;
         }
@@ -35,6 +39,11 @@
             margin: 01vw;
             &--is-active {
                 border-bottom: 5px solid variaveis.$corTextoSecundario;
+                
+            }
+
+            @media (max-width: 768px) {
+                font-size: 16px;
                 
             }
         }
